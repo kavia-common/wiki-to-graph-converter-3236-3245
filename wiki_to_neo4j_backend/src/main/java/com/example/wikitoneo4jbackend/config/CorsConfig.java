@@ -23,6 +23,11 @@ public class CorsConfig {
         config.addAllowedOrigin("http://localhost:3001");
         config.addAllowedOrigin("http://127.0.0.1:3000");
         config.addAllowedOrigin("http://127.0.0.1:3001");
+        // Common local dev ports for web servers
+        config.addAllowedOrigin("http://localhost:8080");
+        config.addAllowedOrigin("http://127.0.0.1:8080");
+        config.addAllowedOrigin("http://localhost:5173");
+        config.addAllowedOrigin("http://127.0.0.1:5173");
         config.setAllowCredentials(true);
         config.addAllowedHeader(CorsConfiguration.ALL);
         config.addAllowedMethod(CorsConfiguration.ALL);
